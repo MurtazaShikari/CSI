@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+    width: 100%;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url(comp.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 100% 100%; */
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url(comp.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+nav .csi {
+    margin: 0 10px;
+    width: 25%;
+}
+
+nav .option {
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav .option a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+a.active,
+a:hover {
+    background: #20a2d9;
+    transition: .5s;
+}
+
+main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section h3 {
+    margin-top: 20px;
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+
+section h1 {
+    margin: 30px 0 30px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+
+section p {
+    font-size: 25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 1px black;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+section a {
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all 0.5s ease;
+}
+
+section .btnone {
+    /*background: #00b894;*/
+    background: #fff;
+    color: #000;
+}
+
+.btnone:hover {
+    background: #20a2d9;
+    color: white;
+}
+
+section .btntwo {
+    background: #20a2d9;
+    color: white;
+}
+
+.btntwo:hover {
+    background: white;
+    color: black;
+}
+
+.change_content:after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #20a2d9;
+}
+
+@keyframes changetext {
+    0% {
+        content: "INNOVATE";
+    }
+
+    20% {
+        content: "DESIGN";
+    }
+
+    35% {
+        content: "IMPLEMENT";
+    }
+
+    60% {
+        content: "EXECUTE";
+    }
+
+    80% {
+        content: "CREATE";
+    }
+
+    100% {
+        content: "ACHEIVE";
+    }
+}
+
+@media (max-width:800px) {
+    header .option {
+        visibility: hidden;
+    }
+
+    h3 {
+        margin-top: 80px;
+    }
+    
+
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-image: url(image2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: rgb(127, 246, 127);
+    /* margin: 10px 20px; */
+    padding: 20px;
+
+
+}
